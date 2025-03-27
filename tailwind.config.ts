@@ -1,34 +1,34 @@
-// tailwind.config.ts
+// tailwind.config.ts (Corrected)
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
+  // --- CORRECTED CONTENT PATHS ---
   content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}', // Scan files directly under ./app/
+    './components/**/*.{js,ts,jsx,tsx,mdx}', // Scan files directly under ./components/
+    // Add './pages/**/*.{js,ts,jsx,tsx,mdx}' IF you are using the pages router alongside app router
   ],
+  // --- END CORRECTION ---
   theme: {
     extend: {
       colors: {
-        'beige': { // Using beige as a base
-          50: '#FAF8F5', // Very light beige (background)
+        'beige': {
+          50: '#FAF8F5',
           100: '#F5F1EC',
           200: '#E8E0D4',
         },
-        'olive': { // Olive green accent
-          600: '#6B705C', // Main olive
-          700: '#585C4D', // Darker olive (hover)
+        'olive': {
+          600: '#6B705C',
+          700: '#585C4D',
         },
-        'amber': { // Deep amber/brown accent
-          700: '#B08968', // Main amber
-          800: '#9C6F4E', // Darker amber
+        'amber': {
+          700: '#B08968',
+          800: '#9C6F4E',
         },
-        'text-main': '#4F4A45', // Dark brownish-gray for text
-        'text-muted': '#706C68', // Lighter gray for muted text
+        'text-main': '#4F4A45',
+        'text-muted': '#706C68',
       },
       fontFamily: {
-        // Example: Using Cormorant Garamond for headings and Inter for body
-        // Make sure to import these in layout.tsx
         serif: ['var(--font-cormorant)', 'serif'],
         sans: ['var(--font-inter)', 'sans-serif'],
       },
@@ -39,6 +39,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [], // You can add Tailwind plugins here if needed later
+  plugins: [],
 };
 export default config;
