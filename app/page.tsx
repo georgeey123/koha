@@ -39,7 +39,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-serif font-semibold text-gray-900 mb-12">
             Discover Our Signature Oil
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto justify-items-center">
+          <div className="flex justify-center">
             <ProductCard
               imageUrl={featuredProductImage}
               name="Koha Signature Hair Oil"

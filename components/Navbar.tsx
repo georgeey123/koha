@@ -17,7 +17,11 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-8">
           {["Home", "Products", "About", "Contact"].map((item) => (
-            <Link key={item} href={`/${item.toLowerCase()}`} className="text-textPrimary hover:text-primary transition">
+            <Link
+              key={item}
+              href={item === "Home" ? "/" : `/${item.toLowerCase()}`} // ✅ Fix applied here
+              className="text-textPrimary hover:text-primary transition"
+            >
               {item}
             </Link>
           ))}
@@ -35,7 +39,11 @@ const Navbar = () => {
           <ul className="flex flex-col items-center space-y-4">
             {["Home", "Products", "About", "Contact"].map((item) => (
               <li key={item}>
-                <Link href={`/${item.toLowerCase()}`} className="text-textPrimary text-lg hover:text-primary" onClick={() => setMenuOpen(false)}>
+                <Link
+                  href={item === "Home" ? "/" : `/${item.toLowerCase()}`} // ✅ Fix applied here
+                  className="text-textPrimary text-lg hover:text-primary"
+                  onClick={() => setMenuOpen(false)}
+                >
                   {item}
                 </Link>
               </li>
