@@ -1,17 +1,88 @@
-/*/app/globals.css */
+/* /app/globals.css */
 
-@import "tailwindcss/preflight";
+/* Correct import for Tailwind v4 */
+@import "tailwindcss";
 
-@tailwind utilities;
+/* Remove incorrect/redundant v3 imports/directives: */
+/* @import "tailwindcss/preflight"; */
+/* @import "tailwindcss/utilities"; */
+/* @tailwind base; */
+/* @tailwind components; */
+/* @tailwind utilities; */
 
-/* Add smooth scrolling */
+/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Optional: Base body styles if needed beyond layout.tsx */
+/* Base styles */
 body {
-  /* Example:
-  @apply bg-beige-50 text-text-main font-sans;
-  */
+  /* Using default hex for gray-50 and gray-900 */
+  @apply bg-[#f9fafb] text-[#111827] font-sans antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  /* Using default hex for gray-900 */
+  @apply font-serif font-semibold text-[#111827];
+}
+
+h1 {
+  @apply text-4xl md:text-5xl leading-tight;
+}
+
+h2 {
+  @apply text-3xl md:text-4xl leading-snug;
+}
+
+h3 {
+  @apply text-xl md:text-2xl leading-relaxed;
+}
+
+/* Button styles */
+button, .btn {
+  /* Using example hex codes for olive-700 (#5A682C) and olive-800 (#454F21) */
+  /* !! Replace #5A682C and #454F21 with your desired hex codes !! */
+  @apply inline-block bg-[#5A682C] text-[#ffffff] font-medium py-3 px-6 rounded-md
+         hover:bg-[#454F21] transition-transform transform hover:-translate-y-1 shadow-md;
+}
+
+/* Container spacing */
+.container {
+  @apply mx-auto px-6 md:px-12;
+}
+
+/* Section spacing */
+section {
+  @apply py-16 md:py-24;
+}
+
+/* Hero Carousel adjustments */
+.embla {
+  @apply overflow-hidden;
+}
+
+.embla__container {
+  @apply flex;
+}
+
+.embla__slide {
+  @apply flex-[0_0_100%];
+}
+
+/* Card styling */
+.card {
+  /* Using hex for white */
+  @apply bg-[#ffffff] shadow-lg rounded-lg p-6;
+}
+
+.card img {
+  @apply rounded-md;
+}
+
+/* Border for Why Choose Us section */
+.border-left-highlight {
+  /* Using default hex for amber-700 (#b45309) */
+  /* !! Replace #b45309 if you intended to use your 'secondary' color (#B08968) !! */
+  @apply border-l-4 border-[#b45309] pl-6;
 }
