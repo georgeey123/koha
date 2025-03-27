@@ -15,7 +15,7 @@ export default function ContactPage() {
         Get In Touch
       </h1>
       <p className="text-center text-text-muted mb-10 max-w-xl mx-auto">
-          We'd love to hear from you! Whether you have questions about our products, need hair care advice, or just want to say hello, please reach out.
+          We&apos;d love to hear from you! Whether you have questions about our products, need hair care advice, or just want to say hello, please reach out.
       </p>
 
        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
