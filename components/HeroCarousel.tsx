@@ -8,7 +8,7 @@ interface HeroCarouselProps {
 }
 
 const HeroCarousel: React.FC<HeroCarouselProps> = ({ imageUrls, options = { loop: true } }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef] = useEmblaCarousel(options);
 
   return (
     <section className="relative w-full h-[500px] overflow-hidden bg-background">
