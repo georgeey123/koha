@@ -21,7 +21,7 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ imageUrls, options = { loop
   }, [emblaApi]);
 
   return (
-    <section className="relative size-2/5">
+    <section className="relative lg:size-2/5">
       <div ref={emblaRef} className="embla overflow-hidden">
         <div className="embla__container flex">
           {imageUrls.map((src, index) => (
