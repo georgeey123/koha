@@ -64,7 +64,8 @@ const ContactForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full py-2 text-white bg-olive-600 rounded-md hover:bg-olive-700 transition-all"
+        className="w-full text-white bg-olive-600 hover:bg-olive-700 inline-block bg-[#5A682C] font-medium py-3 px-6 rounded-md
+         transition-transform transform hover:-translate-y-1 shadow-md"
         disabled={status === 'Sending...'}
       >
         {status === 'Sending...' ? 'Sending...' : 'Send Message'}

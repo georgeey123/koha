@@ -17,11 +17,11 @@ const featuredProductImage = '/images/product_img_1.jpg';
 
 export default function HomePage() {
   return (
-    <div>
+    <div className='flex flex-col  items-center'>
       {/* 🔹 1. Hero Section */}
-      <section className="relative mb-16 md:mb-24 pt-6 md:pt-12">
+      
         <HeroCarousel imageUrls={heroImages} options={{ loop: true }} />
-      </section>
+    
 
       {/* 🔹 2. Welcome Section */}
       <section className="container mx-auto px-6 lg:px-12 text-center max-w-3xl mb-16 md:mb-24">
@@ -39,7 +39,7 @@ export default function HomePage() {
           <h2 className="text-3xl font-serif font-semibold text-gray-900 mb-12">
             Discover Our Signature Oil
           </h2>
-          <div className="flex justify-center">
+          <div className="flex justify-center ">
             <ProductCard
               imageUrl={featuredProductImage}
               name="Koha Signature Hair Oil"

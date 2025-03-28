@@ -34,7 +34,7 @@ export default function ProductsPage() {
       </h1>
 
       {/* Grid layout */}
-      <div className="flex justify-center">
+      <div className="grid grid-cols-2 gap-10">
         {products.map((product) => (
           <ProductCard
             key={product.id}

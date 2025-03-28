@@ -40,12 +40,12 @@ h3 {
 }
 
 /* Button styles */
-button, .btn {
+/* button, .btn { */
   /* Using example hex codes for olive-700 (#5A682C) and olive-800 (#454F21) */
-  /* !! Replace #5A682C and #454F21 with your desired hex codes !! */
-  @apply inline-block bg-[#5A682C] text-[#ffffff] font-medium py-3 px-6 rounded-md
+
+  /* @apply inline-block bg-[#5A682C] text-[#ffffff] font-medium py-3 px-6 rounded-md
          hover:bg-[#454F21] transition-transform transform hover:-translate-y-1 shadow-md;
-}
+} */
 
 /* Container spacing */
 .container {
