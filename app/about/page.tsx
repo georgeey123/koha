@@ -1,10 +1,7 @@
-// src/app/about/page.tsx
-// Remove 'Image' import if no longer used
-// import Image from 'next/image';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Koha Naturals | Our Story & Mission', // Updated title
+  title: 'About Koha Naturals | Our Story & Mission',
   description: 'Learn about Koha Naturals\' journey, our commitment to natural ingredients, and our mission for healthier hair.',
 };
 
@@ -15,7 +12,6 @@ export default function AboutPage() {
         Our Story
       </h1>
 
-      {/* --- Removed the grid layout and image --- */}
       <div className="prose prose-lg max-w-3xl mx-auto text-text-muted prose-headings:font-serif prose-headings:text-text-main prose-strong:text-text-main mb-12 md:mb-16 text-center md:text-left"> {/* Centered text */}
           <h2 className="text-2xl font-medium text-center">From Nature, With Love</h2>
           <p>

@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 // --- Define Hero Images ---
 const heroImages = [
-  '/images/carousel_img_1.jpg',
   '/images/carousel_img_2.jpg',
   '/images/carousel_img_3.jpg',
   '/images/carousel_img_4.jpg',
@@ -76,9 +75,14 @@ export default function HomePage() {
             </p>
           </div>
           <div className="border-l-4 border-amber-700 pl-6">
-            <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">Ethically Sourced</h3>
+            <h3 className="text-xl font-serif font-semibold text-gray-900 mb-2">Benefits</h3>
             <p className="text-gray-700">
-              We partner with suppliers who prioritize quality and sustainable practices.
+              <ul>
+                <li>Protects against damage</li>
+                <li>Boosts hair growth</li>
+                <li>Prevents thinning & breakage</li>
+                <li>Nourishes scalp</li>
+              </ul>
             </p>
           </div>
         </div>

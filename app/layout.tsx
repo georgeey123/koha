@@ -17,17 +17,13 @@ const cormorant = Cormorant_Garamond({
   display: 'swap',
 });
 
-// --- Updated Metadata ---
 export const metadata: Metadata = {
-  // Updated site title template
   title: {
-     template: '%s | Koha Naturals', // Used by child pages
-     default: 'Koha Naturals - Natural Hair Care', // Default title for home/unspecified pages
+     template: '%s | Koha Naturals',
+     default: 'Koha Naturals - Natural Hair Care',
   },
   description: 'Discover Koha Naturals, premium natural hair oil crafted with botanical ingredients for healthy, beautiful hair.',
-  // Add more SEO meta tags here later
 };
-// --- End of update ---
 
 export default function RootLayout({
   children,

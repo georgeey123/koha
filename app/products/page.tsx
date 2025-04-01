@@ -1,6 +1,5 @@
-// app/products/page.tsx
 import type { Metadata } from "next";
-import ProductCard from "@/components/ProductCard"; // Importing the ProductCard component
+import ProductCard from "@/components/ProductCard";
 
 export const metadata: Metadata = {
   title: "Koha Hair Oil | Products",
@@ -33,7 +32,6 @@ export default function ProductsPage() {
         Our Hair Care Collection
       </h1>
 
-      {/* Grid layout */}
       <div className="grid grid-cols-2 gap-10">
         {products.map((product) => (
           <ProductCard

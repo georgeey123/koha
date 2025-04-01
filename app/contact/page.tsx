@@ -35,18 +35,16 @@ export default function ContactPage() {
                     </li>
                      <li className="flex items-start">
                          <FaPhone className="text-amber-700 mt-1 mr-3 flex-shrink-0" size={18}/>
-                         <span>Phone: <a href="tel:+1234567890" className="text-olive-600 hover:underline">+1 (234) 567-890</a></span>
+                         <span>Phone: <a href="tel:+233550801915" className="text-olive-600 hover:underline">+233 (0) 550801915</a></span>
                     </li>
                      <li className="flex items-start">
                          <FaMapMarkerAlt className="text-amber-700 mt-1 mr-3 flex-shrink-0" size={18}/>
-                         <span>Address: 123 Nature Lane, Wellness City, ST 98765</span>
-                         {/* Replace with actual address or remove if not applicable */}
+                         <span>Address: 19A Mahogany, Adweso - Koforidua, EN-075-2667</span>
                     </li>
                  </ul>
                  <p className="mt-6 text-sm">
                      We typically respond within 24-48 business hours.
                  </p>
-                 {/* Optional: Add a map here if needed */}
             </div>
        </div>
     </div>

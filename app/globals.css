@@ -1,29 +1,16 @@
-/* /app/globals.css */
-
-/* Correct import for Tailwind v4 */
 @import "tailwindcss";
 
-/* Remove incorrect/redundant v3 imports/directives: */
-/* @import "tailwindcss/preflight"; */
-/* @import "tailwindcss/utilities"; */
-/* @tailwind base; */
-/* @tailwind components; */
-/* @tailwind utilities; */
-
-/* Smooth scrolling */
 html {
   scroll-behavior: smooth;
 }
 
 /* Base styles */
 body {
-  /* Using default hex for gray-50 and gray-900 */
   @apply bg-[#f9fafb] text-[#111827] font-sans antialiased;
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  /* Using default hex for gray-900 */
   @apply font-serif font-semibold text-[#111827];
 }
 
@@ -39,13 +26,6 @@ h3 {
   @apply text-xl md:text-2xl leading-relaxed;
 }
 
-/* Button styles */
-/* button, .btn { */
-  /* Using example hex codes for olive-700 (#5A682C) and olive-800 (#454F21) */
-
-  /* @apply inline-block bg-[#5A682C] text-[#ffffff] font-medium py-3 px-6 rounded-md
-         hover:bg-[#454F21] transition-transform transform hover:-translate-y-1 shadow-md;
-} */
 
 /* Container spacing */
 .container {
@@ -72,7 +52,6 @@ section {
 
 /* Card styling */
 .card {
-  /* Using hex for white */
   @apply bg-[#ffffff] shadow-lg rounded-lg p-6;
 }
 
@@ -82,7 +61,5 @@ section {
 
 /* Border for Why Choose Us section */
 .border-left-highlight {
-  /* Using default hex for amber-700 (#b45309) */
-  /* !! Replace #b45309 if you intended to use your 'secondary' color (#B08968) !! */
   @apply border-l-4 border-[#b45309] pl-6;
 }

@@ -38,7 +38,6 @@ const HeroCarousel: React.FC<HeroCarouselProps> = ({ imageUrls, options = { loop
           ))}
         </div>
       </div>
-      {/* Arrows for desktop users */}
      
 
       <button
