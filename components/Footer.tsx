@@ -30,12 +30,12 @@ const Footer = () => {
         <div>
           <h4 className="text-lg font-medium mb-3 text-white uppercase tracking-wider">Connect</h4>
           <div className="flex justify-center md:justify-start space-x-5">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white transition-colors"><FaInstagram size={22} /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white transition-colors"><FaFacebook size={22} /></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white transition-colors"><FaTwitter size={22} /></a>
+            <a href="https://www.instagram.com/koha.products" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-white transition-colors"><FaInstagram size={22} /></a>
+            {/* <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-white transition-colors"><FaFacebook size={22} /></a> */}
+            {/* <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="hover:text-white transition-colors"><FaTwitter size={22} /></a> */}
           </div>
           <p className="text-sm text-beige-200 mt-3">Contact us:</p>
-          <a href="mailto:info@kohanaturals.com" className="text-sm text-white hover:underline">info@kohanaturals.com</a>
+          <a href="mailto:productskoha@gmail.com" className="text-sm text-black hover:underline">productskoha@gmail.com</a>
         </div>
       </div>
 
