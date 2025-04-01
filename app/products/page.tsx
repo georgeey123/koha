@@ -21,7 +21,7 @@ const products = [
     name: "Koha Olive & Coconut Hair Oil",
     description:
       "A balanced mix combining the benefits of olive and coconut oils.",
-    imageUrl: "/images/product_img_2.jpg",
+    imageUrl: "/images/product_img_3.jpg",
   },
 ];
 

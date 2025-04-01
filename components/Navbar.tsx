@@ -38,7 +38,7 @@ const Navbar = () => {
       {menuOpen && (
         <nav className="md:hidden bg-white py-4">
           <ul className="flex flex-col items-center space-y-4">
-            {["Home", "Products", "Testimonial","About", "Contact"].map((item) => (
+            {["Home", "Products", "Testimonials","About", "Contact"].map((item) => (
               <li key={item}>
                 <Link
                   href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
